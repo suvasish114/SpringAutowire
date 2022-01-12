@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+	<bean id="laptop" class="com.example.SpringAutowire.Laptop" autowire="byName">
+		<property name="name" value="dell vostro 1450s"/>
+		<property name="price" value="45000"/>
+	</bean>
+	
+	<bean id="processor" class="com.example.SpringAutowire.Processor">
+		<property name="name" value="intel i3 11g"/>
+	</bean>
+	<bean id="motherboard" class="com.example.SpringAutowire.Motherboard">
+		<property name="name" value="gigabyte h81ms v2"/>
+	</bean>
+</beans>
